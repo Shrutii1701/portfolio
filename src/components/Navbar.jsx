@@ -1,4 +1,4 @@
-import { Home, Code2, FolderGit2, Mail } from 'lucide-react';
+import { Home, Code2, FolderGit2, GraduationCap, Trophy, Mail } from 'lucide-react';
 
 const Navbar = () => {
     return (
@@ -14,6 +14,11 @@ const Navbar = () => {
             <a href="#projects" className="nav-link">
                 <FolderGit2 />
                 <span>Projects</span>
+            </a>
+           
+            <a href="#achievements" className="nav-link">
+                <Trophy />
+                <span>Achievements</span>
             </a>
             <a href="#contact" className="nav-link">
                 <Mail />
