@@ -90,7 +90,7 @@ export default function TrainingCerts() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           >
             <div className="flex items-center gap-2 mb-4">
               <BookOpen size={16} color="var(--accent)" />
@@ -171,7 +171,7 @@ export default function TrainingCerts() {
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.09, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ delay: i * 0.09, duration: 0.5, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
                   className="flex items-center gap-3 rounded-xl p-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
                   style={{
                     background: "var(--bg-card)",

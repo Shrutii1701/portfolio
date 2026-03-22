@@ -35,7 +35,7 @@ const container = {
 };
 const item = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] } },
 };
 
 export default function Skills() {
@@ -69,7 +69,7 @@ export default function Skills() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: gi * 0.1, duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ delay: gi * 0.1, duration: 0.55, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
               className="rounded-2xl p-6"
               style={{ background: "var(--bg)", border: "1px solid var(--border)" }}
             >

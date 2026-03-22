@@ -1007,7 +1007,7 @@ function Hero() {
                                 src: "/shruti.png",
                                 alt: "Shruti Mishra",
                                 fill: true,
-                                sizes: "(max-width: 768px) 100vw, 50vw",
+                                sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
                                 className: "object-contain object-center",
                                 priority: true,
                                 style: {

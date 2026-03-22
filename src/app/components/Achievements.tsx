@@ -51,7 +51,7 @@ export default function Achievements() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
-              transition={{ delay: i * 0.12, duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ delay: i * 0.12, duration: 0.55, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
               className="card-glow text-center rounded-2xl p-6 flex flex-col items-center gap-4"
               style={{
                 background: "var(--bg)",

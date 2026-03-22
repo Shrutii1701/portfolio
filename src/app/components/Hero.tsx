@@ -112,6 +112,7 @@ export default function Hero() {
             src="/shruti.png"
             alt="Shruti Mishra"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-contain object-center"
             priority
             style={{ background: "transparent" }}

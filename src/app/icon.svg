@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5D4" />
+      <stop offset="100%" stop-color="#7B61FF" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F1A" />
+      <stop offset="100%" stop-color="#141b2d" />
+    </linearGradient>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark Background -->
+  <rect width="512" height="512" rx="140" fill="url(#bgGrad)" />
+  
+  <!-- Diagonal neon aesthetic lines or accents -->
+  <path d="M-100 0 L512 612" stroke="rgba(0, 245, 212, 0.08)" stroke-width="40" />
+  <path d="M0 -100 L612 512" stroke="rgba(123, 97, 255, 0.08)" stroke-width="40" />
+
+  <!-- Glassmorphic border ring -->
+  <rect x="32" y="32" width="448" height="448" rx="116" fill="transparent" stroke="url(#brandGrad)" stroke-width="12" filter="url(#neonGlow)" opacity="0.8" />
+
+  <!-- Initials SM -->
+  <text 
+    x="50%" 
+    y="54%" 
+    font-family="system-ui, -apple-system, sans-serif" 
+    font-weight="900" 
+    font-size="220" 
+    fill="url(#brandGrad)" 
+    text-anchor="middle" 
+    dominant-baseline="middle"
+    letter-spacing="-10"
+  >SM</text>
+</svg>

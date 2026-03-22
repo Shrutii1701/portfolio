@@ -44,7 +44,7 @@ export default function WelcomePage({ onEnter, theme }: WelcomePageProps) {
       <motion.div
         initial={{ opacity: 0, y: 40, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
         className="glass relative z-10 rounded-3xl px-8 py-12 sm:px-12 sm:py-14 w-full max-w-md mx-4 text-center shadow-2xl"
       >
         {/* Logo / Avatar */}
