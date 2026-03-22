@@ -12,7 +12,7 @@ const projects = [
         ],
         technologies: ['HTML', 'JavaScript', 'Gemini API', 'Data Processing'],
         github: 'https://github.com/Shrutii1701/Perfume-Recommendation-System',
-        live: '#',
+        live: 'https://veloura-eight.vercel.app/',
         color: 'purple'
     },
     {
